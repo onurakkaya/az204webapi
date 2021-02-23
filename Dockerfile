@@ -4,7 +4,6 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 RUN npm install --production 
-RUN mv node_modules ./
 
 COPY . .
 EXPOSE 8080
